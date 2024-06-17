@@ -1,0 +1,33 @@
+
+<!-- <div class="card flex justify-content-center">
+    <p-inputSwitch formControlName="checked"></p-inputSwitch>
+</div> -->
+
+<div class="row">
+  <div class="col-md-4" *ngFor="let employee of employees">
+    <div class="card mb-3">
+      <div class="card-img-top text-center">
+        <img 
+          [src]="getImageSource(employee.Gender)" 
+          class="img-fluid" 
+          alt="Employee Image" 
+          style="width: 100px; height: 100px;">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">EmpDetails</h5>
+        <p class="card-text">EmpName: {{ employee.EmpName }}</p>
+        <p class="card-text">DateofBirth: {{ employee.DateofBirth | date }}</p>
+        <p class="card-text">EmailId: {{ employee.EmailId }}</p>
+        <p class="card-text">Gender: {{ employee.Gender.trim() }}</p>
+        <p class="card-text">Address: {{ employee.Address }}</p>
+        <p class="card-text">Pincode: {{ employee.Pincode }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
